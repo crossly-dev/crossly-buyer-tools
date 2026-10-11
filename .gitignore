@@ -1,0 +1,4 @@
+node_modules/
+dist/
+.crossly-sync.json
+*.ndjson

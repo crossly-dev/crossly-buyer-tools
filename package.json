@@ -1,0 +1,31 @@
+{
+  "name": "@crossly/buyer-tools",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Reference tools for the Crossly buyer API: a restock monitor, an auto-buyer, a catalogue mirror and a deal scanner. TypeScript on @crossly/buyer-sdk.",
+  "license": "MIT",
+  "homepage": "https://crossly.net",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crossly-dev/crossly-buyer-tools.git"
+  },
+  "type": "module",
+  "scripts": {
+    "monitor": "tsx monitor.ts",
+    "autobuy": "tsx autobuy.ts",
+    "catalog-sync": "tsx catalog-sync.ts",
+    "deal-scanner": "tsx deal-scanner.ts",
+    "typecheck": "tsc --noEmit -p ."
+  },
+  "dependencies": {
+    "@crossly/buyer-sdk": "^0.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.2"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
